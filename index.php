@@ -88,15 +88,34 @@ require 'db_config.php';
                                     <div class="profile-image">
 
 
+
+                                        <!-- Formulário Miguel  -->
+
+                                        <h2>Miguel Form 1</h2>
+                                        <form action="insert.php" method="post" enctype="multipart/form-data">
+
+                                            <div class="img-uploader-content">
+                                                <input type="file" name="filepond" value="upload" class="filepond" accept="image/png, image/jpeg, image/gif">
+<!--                                                <input type="submit" name="insert">-->
+                                            </div>
+
+                                        </form>
+
+
+                                        <!-- Formulário Miguel -->
+
+
+
+
+
+
                                         <!-- // The classic file input element we'll enhance
                                         // to a file pond, we moved the configuration
                                         // properties to JavaScript -->
-
-
-                                        <div class="img-uploader-content">
-                                            <input type="file" class="filepond"
-                                                   name="filepond" accept="image/png, image/jpeg, image/gif"/>
-                                        </div>
+<!--                                        <div class="img-uploader-content">-->
+<!--                                            <input type="file" class="filepond"-->
+<!--                                                   name="filepond" accept="image/png, image/jpeg, image/gif"/>-->
+<!--                                        </div>-->
 
 
 
