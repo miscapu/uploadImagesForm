@@ -95,7 +95,7 @@ require 'db_config.php';
                                         <form action="insert.php" method="post" enctype="multipart/form-data">
 
                                             <div class="img-uploader-content">
-                                                <input type="file" name="filepond" value="upload" class="filepond" accept="image/png, image/jpeg, image/gif">
+                                                <input type="file" name="file" value="upload" class="filepond" accept="image/png, image/jpeg, image/gif">
                                                 <input type="submit" name="insert">
                                             </div>
 

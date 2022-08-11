@@ -1,7 +1,7 @@
 <?php
 /**
  * method="post"
- * <input type="file" name="filepond" value="upload" class="filepond" accept="image/png, image/jpeg, image/gif">
+ * <input type="file" name="file" value="upload" class="filepond" accept="image/png, image/jpeg, image/gif">
  *
  * CREATE TABLE `crud_image` (
 `u_id` int(10) NOT NULL,
@@ -13,6 +13,7 @@
 error_reporting( 0 );
 // Add file db_config for data DB
 require ( 'db_config.php' );
+
 
 // Conditional errors
 if ( isset( $_POST[ 'insert' ] ) )
@@ -29,8 +30,11 @@ if ( isset( $_POST[ 'insert' ] ) )
     $result     =   mysqli_query( $conn, $insert );
 
     // Upload file in folder uploads into root
-    move_uploaded_file( $tmp_name,  "/uploads/".$file_name."" );
+    move_uploaded_file( $tmp_name,  "uploads/".$file_name."" );
     header( "location:../index.php" );
 
 }
 
+echo "<a href='select.php'>go to</a>";
+
+mysqli_close( $conn );
